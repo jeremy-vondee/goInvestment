@@ -1,0 +1,106 @@
+@font-face {
+	font-family: "ProductSans-Regular";
+	src: url("../../Public/Fonts/ProductSans-Regular.ttf");
+}
+@font-face {
+	font-family: "ProductSans-Medium";
+	src: url("../../Public/Fonts/ProductSans-Medium.ttf");
+}
+@font-face {
+	font-family: "ProductSans-Light";
+	src: url("../../Public/Fonts/ProductSans-Light.ttf");
+}
+
+.navbar {
+	position: fixed;
+	width: 100%;
+	transition: ease-in-out 0.2s;
+}
+
+.navbar.solid,
+.navbar-burger span {
+	background-color: #328c68;
+}
+
+a.navbar-item {
+	color: #328c68;
+	font-family: "ProductSans-Regular";
+}
+
+.navbar .navbar-menu hr {
+	display: none;
+}
+
+.navbar.solid a.navbar-item {
+	color: #fff;
+}
+
+.navbar.solid .navbar-burger span {
+	background-color: #fff;
+}
+
+.hero-banner {
+	background-image: url("../../Public/Images/HeroImg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.hero-body h1,
+.section h2,
+.button {
+	font-family: "ProductSans-Medium";
+}
+
+.hero-body .container p,
+.section .columns .column .card-content {
+	font-weight: 350;
+	font-family: ProductSans-light;
+}
+
+.section p {
+	font-family: "ProductSans-Regular";
+}
+
+.card .card-content {
+	font-weight: 280;
+}
+.button,
+.button:hover {
+	background-color: #095d3b;
+	color: #fff;
+	border: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+	.hero-body .container p {
+		width: 45%;
+	}
+
+	.box p {
+		width: 65%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 769px) {
+	.navbar-menu.is-active {
+		position: fixed;
+		width: 100%;
+		top: 3.25rem;
+		background-color: #eee;
+		text-align: center;
+		transition: all ease-in-out 0.2s;
+	}
+	a.navbar-item {
+		color: #328c68 !important;
+	}
+	.navbar .navbar-menu hr {
+		display: block;
+		background-color: #ddd;
+		height: 1px;
+	}
+	/* .navbar-burger span {
+		background-color: #328c68;
+	} */
+}
