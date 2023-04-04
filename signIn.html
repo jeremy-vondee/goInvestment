@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/Css/bulma.min.css" />
+    <link rel="preload stylesheet" href="./src/Css/index.css" as="style" type="text/css" />
+    <link rel="preload stylesheet" href="./src/Font-awesome/css/fontawesome.min.css" as="style" type="text/css" />
+    <link rel="preload stylesheet" href="./src/Font-awesome/css/solid.min.css" as="style" type="text/css" />
+    <title>Sign In</title>
+</head>
+
+<body>
+    <div class="section page-content p-0">
+        <form id="main-form"
+            class="left is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+            <div class="content">
+                <h2 class="title mb-0 has-text-centered">Sign in</h2>
+            </div>
+            <div class="field field-is-hidden">
+                <p class="control has-icons-left">
+                    <input class="input" placeholder="First Name" name="firstName">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <small></small>
+                </p>
+            </div>
+            <div class="field field-is-hidden">
+                <p class="control has-icons-left">
+                    <input class="input" placeholder="Last Name" name="lastName">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <small></small>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control has-icons-left">
+                    <input class="input" type="email" placeholder="Enter your email" name="email" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <small></small>
+                </p>
+            </div>
+            <div class="field field-is-hidden">
+                <p class="control has-icons-left">
+                    <input class="input" type="email" placeholder="Confirm Email" name="confirmEmail">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    <small></small>
+                </p>
+            </div>
+            <div class="field">
+                <p class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Enter your password" name="password" required>
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <small></small>
+                </p>
+            </div>
+            <div class="field field-is-hidden">
+                <p class="control has-icons-left">
+                    <input class="input" type="password" placeholder="Confirm your password" name="confirmPassword">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <small></small>
+                </p>
+            </div>
+            <div class="field field-is-hidden">
+                <p class="control has-icons-left">
+                    <input class="input" type="number " placeholder="Phone Number" name="phoneNumber">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-phone"></i>
+                    </span>
+                    <small></small>
+                </p>
+            </div>
+            <a class="link sub-title-2 has-text-black has-text-centered">Forgot your password?</a>
+            <button class="button" id="formSubmitButton" name="formSubmitButton">Sign In</button>
+        </form>
+        <div
+            class="content has-text-white right is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+            <h2 id="sidePanelTitle" class="title mb-0 has-text-centered has-text-white">Hello, friend!</h2>
+            <span id="sidePanelSubtitle" class="sub-title-1 has-text-centered">Don't have an account sign up
+                now!!</span>
+            <button class="button" id="formToggleButton">Sign Up</button>
+        </div>
+    </div>
+
+    <script src="./src/Js/login.js"></script>
+    <script src="./src/Js/formValidator.js"></script>
+</body>
+
+</html>

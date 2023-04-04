@@ -65,11 +65,63 @@ a.navbar-item {
 .card .card-content {
 	font-weight: 280;
 }
+
+.button {
+	width: max-content;
+}
+
 .button,
 .button:hover {
 	background-color: #095d3b;
 	color: #fff;
 	border: hidden;
+}
+
+.page-content {
+	display: flex;
+}
+
+.left,
+.right {
+	flex-grow: 1;
+	flex-basis: 50%;
+	height: 100vh;
+	transform: translateX(0%);
+	transition: transform 0.5s ease-in-out;
+}
+
+.left {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.right {
+	background-color: #328c68;
+}
+
+.left.is-active {
+	transform: translateX(100%);
+}
+
+.right.is-active {
+	transform: translateX(-100%);
+}
+
+.field {
+	width: 100%;
+	overflow: hidden;
+	max-height: 4em;
+	transition: max-height 0.3s ease-in-out, margin 0.3s ease-in-out;
+}
+
+.field .control,
+.field .input {
+	width: 100%;
+}
+
+.field.field-is-hidden {
+	max-height: 0em;
+	margin: 0px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -100,7 +152,24 @@ a.navbar-item {
 		background-color: #ddd;
 		height: 1px;
 	}
-	/* .navbar-burger span {
-		background-color: #328c68;
-	} */
+
+	.page-content {
+		flex-direction: column;
+	}
+
+	.left {
+		margin-top: 5rem;
+	}
+
+	.right {
+		background-color: #fff;
+	}
+
+	.right .title {
+		display: none;
+	}
+
+	.right .sub-title-1 {
+		color: #000;
+	}
 }
